@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
-    "build": "REMIX_NO_SERVER_BUILD=1 remix vite:build",
+    "build": "set REMIX_NO_SERVER_BUILD=1 && remix vite:build",
     "dev": "remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
